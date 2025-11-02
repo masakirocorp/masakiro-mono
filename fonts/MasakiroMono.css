@@ -1,0 +1,108 @@
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/MasakiroMono-Regular.woff2') format('woff2'), url('TTF/MasakiroMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/MasakiroMono-Italic.woff2') format('woff2'), url('TTF/MasakiroMono-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/MasakiroMono-Bold.woff2') format('woff2'), url('TTF/MasakiroMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/MasakiroMono-BoldItalic.woff2') format('woff2'), url('TTF/MasakiroMono-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/MasakiroMono-Light.woff2') format('woff2'), url('TTF/MasakiroMono-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/MasakiroMono-LightItalic.woff2') format('woff2'), url('TTF/MasakiroMono-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/MasakiroMono-Medium.woff2') format('woff2'), url('TTF/MasakiroMono-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/MasakiroMono-MediumItalic.woff2') format('woff2'), url('TTF/MasakiroMono-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/MasakiroMono-SemiBold.woff2') format('woff2'), url('TTF/MasakiroMono-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/MasakiroMono-SemiBoldItalic.woff2') format('woff2'), url('TTF/MasakiroMono-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/MasakiroMono-ExtraBold.woff2') format('woff2'), url('TTF/MasakiroMono-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Masakiro Mono Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/MasakiroMono-ExtraBoldItalic.woff2') format('woff2'), url('TTF/MasakiroMono-ExtraBoldItalic.ttf') format('truetype');
+}
