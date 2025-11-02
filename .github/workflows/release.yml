@@ -1,0 +1,82 @@
+name: Release
+
+on:
+  push:
+    branches: ["master"]
+    paths:
+      - "config.toml"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ttfautohint python3
+
+      - name: Checkout Iosevka
+        uses: actions/checkout@v4
+        with:
+          repository: be5invis/Iosevka
+          path: iosevka-src
+          fetch-depth: 1
+
+      - name: Configure build
+        run: cp config.toml iosevka-src/private-build-plans.toml
+
+      - name: Build fonts
+        run: |
+          cd iosevka-src
+          npm install
+          npm run build -- contents::MasakiroMono
+
+      - name: Verify output
+        run: |
+          if [ ! -d "iosevka-src/dist/MasakiroMono/TTF" ] || [ ! -d "iosevka-src/dist/MasakiroMono/WOFF2" ]; then
+            echo "Build failed: missing output directories"
+            exit 1
+          fi
+
+      - name: Package releases
+        run: |
+          cd iosevka-src/dist/MasakiroMono
+          zip -r ../../../MasakiroMono.zip TTF-Unhinted
+          zip -r ../../../MasakiroMono-Hinted.zip TTF
+          zip -r ../../../MasakiroMono-Web.zip WOFF2 WOFF2-Unhinted
+
+      - name: Generate version tag
+        id: version
+        run: echo "tag=v1.0.0" >> $GITHUB_OUTPUT
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: "Masakiro Mono ${{ steps.version.outputs.tag }}"
+          body: |
+            Built from commit ${{ github.sha }}
+
+            **Downloads:**
+            - `MasakiroMono.zip` - Modern fonts (recommended)
+            - `MasakiroMono-Hinted.zip` - Legacy support
+            - `MasakiroMono-Web.zip` - Web fonts (WOFF2)
+          files: |
+            MasakiroMono.zip
+            MasakiroMono-Hinted.zip
+            MasakiroMono-Web.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
