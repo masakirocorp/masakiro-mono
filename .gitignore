@@ -1,0 +1,16 @@
+# Editor
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.log
+*.tmp
+node_modules/
