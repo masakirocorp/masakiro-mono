@@ -1,0 +1,18 @@
+name: Discord external issue notifications
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  notify:
+    uses: masakirocorp/.github/.github/workflows/notify-external-issue.yml@master
+    with:
+      issue_number: ${{ github.event.issue.number }}
+      issue_title: ${{ github.event.issue.title }}
+      issue_url: ${{ github.event.issue.html_url }}
+      issue_author: ${{ github.event.issue.user.login }}
+      repo_name: ${{ github.repository }}
+    secrets:
+      DISCORD_WEBHOOK_TRIAGE: ${{ secrets.DISCORD_WEBHOOK_TRIAGE }}
+      GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
