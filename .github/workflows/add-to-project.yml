@@ -6,6 +6,6 @@ on:
 
 jobs:
   add-to-project:
-    uses: masakirocorp/.github/.github/workflows/add-to-project.yml@main
+    uses: masakirocorp/.github/.github/workflows/add-to-project.yml@master
     secrets:
       ADD_TO_PROJECT_PAT: ${{ secrets.ADD_TO_PROJECT_PAT }}
