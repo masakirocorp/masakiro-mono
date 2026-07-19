@@ -10,8 +10,9 @@ Download the latest release from the [Releases page](https://github.com/masakiro
 
 **Available packages:**
 
-- `MasakiroMono.zip` - Modern fonts (recommended)
-- `MasakiroMono-Hinted.zip` - For standard-resolution displays
+- `MasakiroMono.zip` - Recommended desktop package: Light, Regular, and Bold
+- `MasakiroMono-Hinted.zip` - Same six faces for standard-resolution displays
+- `MasakiroMono-Full.zip` - All six weights
 - `MasakiroMono-Web.zip` - WOFF2 web fonts
 
 Extract and install the fonts on your system.
@@ -20,9 +21,9 @@ Extract and install the fonts on your system.
 
 ## Features
 
-- 7 weight variants: Light (300) to ExtraBold (800)
+- Default desktop package has Light, Regular, and Bold with matching italics
 - Upright and Italic styles
-- Multiple font formats
+- Broad Latin plus common coding, math, and terminal symbols; other scripts use system fallback
 
 Full configuration available in [`config.toml`](./config.toml).
 

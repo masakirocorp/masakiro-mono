@@ -146,6 +146,91 @@ shape = "italic"
 menu = "italic"
 css = "italic"
 
+# Studio-focused coverage: broad Latin text plus the symbols commonly
+# needed in source code, terminals, technical writing, and Powerline prompts.
+[buildPlans.MasakiroMono.subset.include]
+ranges = [
+  [0x0020, 0x007E], # Basic Latin
+  [0x00A0, 0x024F], # Latin-1 Supplement–Latin Extended-B
+  [0x0259, 0x0259], # IPA Extensions
+  [0x0272, 0x0272], # IPA Extensions
+  [0x02B0, 0x036F], # Spacing Modifier Letters–Combining Diacritical Marks
+  [0x03A9, 0x03A9], # Greek and Coptic
+  [0x1AB0, 0x1ACF], # Combining Diacritical Marks Extended
+  [0x1AD9, 0x1AEB], # Combining Diacritical Marks Extended
+  [0x1DC3, 0x1EFF], # Combining Diacritical Marks Supplement–Latin Extended Additional
+  [0x2010, 0x2026], # General Punctuation
+  [0x2030, 0x2030], # General Punctuation
+  [0x2039, 0x203D], # General Punctuation
+  [0x2044, 0x2049], # General Punctuation
+  [0x2070, 0x2079], # Superscripts and Subscripts
+  [0x2080, 0x2089], # Superscripts and Subscripts
+  [0x20A1, 0x20BF], # Currency Symbols
+  [0x20D0, 0x20F0], # Combining Diacritical Marks for Symbols
+  [0x2103, 0x2103], # Letterlike Symbols
+  [0x2109, 0x2109], # Letterlike Symbols
+  [0x2113, 0x2116], # Letterlike Symbols
+  [0x2122, 0x2122], # Letterlike Symbols
+  [0x212A, 0x212A], # Letterlike Symbols
+  [0x2153, 0x2154], # Number Forms
+  [0x215B, 0x215E], # Number Forms
+  [0x2190, 0x2199], # Arrows
+  [0x21A9, 0x21AA], # Arrows
+  [0x21BA, 0x21BB], # Arrows
+  [0x21C4, 0x21C6], # Arrows
+  [0x21F5, 0x21F5], # Arrows
+  [0x2200, 0x2208], # Mathematical Operators
+  [0x220F, 0x2212], # Mathematical Operators
+  [0x221A, 0x2220], # Mathematical Operators
+  [0x2227, 0x222B], # Mathematical Operators
+  [0x2234, 0x2237], # Mathematical Operators
+  [0x2248, 0x2248], # Mathematical Operators
+  [0x2260, 0x2265], # Mathematical Operators
+  [0x2282, 0x2282], # Mathematical Operators
+  [0x2295, 0x2295], # Mathematical Operators
+  [0x2385, 0x2385], # Miscellaneous Technical
+  [0x2394, 0x2394], # Miscellaneous Technical
+  [0x23F4, 0x23F7], # Miscellaneous Technical
+  [0x2460, 0x2468], # Enclosed Alphanumerics
+  [0x24EA, 0x24EA], # Enclosed Alphanumerics
+  [0x24FF, 0x25FF], # Enclosed Alphanumerics–Geometric Shapes
+  [0x2605, 0x2606], # Miscellaneous Symbols
+  [0x2610, 0x2612], # Miscellaneous Symbols
+  [0x2639, 0x263B], # Miscellaneous Symbols
+  [0x2680, 0x2685], # Miscellaneous Symbols
+  [0x26AA, 0x26AC], # Miscellaneous Symbols
+  [0x2713, 0x2718], # Dingbats
+  [0x2726, 0x2727], # Dingbats
+  [0x2756, 0x2756], # Dingbats
+  [0x2776, 0x277E], # Dingbats
+  [0x2B0E, 0x2B2B], # Miscellaneous Symbols and Arrows
+  [0x2B50, 0x2B54], # Miscellaneous Symbols and Arrows
+  [0x2BC0, 0x2BC4], # Miscellaneous Symbols and Arrows
+  [0x2BCC, 0x2BCF], # Miscellaneous Symbols and Arrows
+  [0x2C60, 0x2C7F], # Latin Extended-C
+  [0xA720, 0xA737], # Latin Extended-D
+  [0xA73E, 0xA751], # Latin Extended-D
+  [0xA75A, 0xA767], # Latin Extended-D
+  [0xA779, 0xA7CF], # Latin Extended-D
+  [0xA7DA, 0xA7DC], # Latin Extended-D
+  [0xA7F1, 0xA7FF], # Latin Extended-D
+  [0xAB30, 0xAB53], # Latin Extended-E
+  [0xAB5B, 0xAB6B], # Latin Extended-E
+  [0xE0A0, 0xE0A3], # Private Use Area
+  [0xE0AE, 0xE0BF], # Private Use Area
+  [0xEE00, 0xEE0B], # Private Use Area
+  [0xF880, 0xF883], # Private Use Area
+  [0xF891, 0xF89F], # Private Use Area
+  [0xFE00, 0xFE0F], # Variation Selectors
+  [0xFFFD, 0xFFFD], # Replacement Character
+  [0x10788, 0x1078D], # Latin Extended-F
+  [0x1079D, 0x1079F], # Latin Extended-F
+  [0x107A7, 0x107AF], # Latin Extended-F
+  [0x107B9, 0x107B9], # Latin Extended-F
+  [0x1DF05, 0x1DF0A], # Latin Extended-G
+  [0x1DF12, 0x1DF1D], # Latin Extended-G
+]
+
 [buildPlans.MasakiroMono.metricOverride]
 xHeight = 520
 cap = 690
